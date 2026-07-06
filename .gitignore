@@ -1,0 +1,65 @@
+# Dependencies
+/node_modules/
+/vendor/
+
+# Build output
+/bootstrap/ssr/
+/public/build/
+/public/hot
+/public/storage
+/public/fonts-manifest.dev.json
+
+# Generated Laravel / Wayfinder files
+/resources/js/actions/
+/resources/js/routes/
+/resources/js/wayfinder/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+/auth.json
+/storage/*.key
+
+# Runtime files
+/.phpunit.cache/
+.phpunit.result.cache
+/storage/pail/
+/storage/logs/*.log
+/storage/framework/cache/data/*
+
+# Databases
+/database/*.sqlite
+/database/*.sqlite-*
+
+# Logs and package-manager noise
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+composer.phar
+
+# Local IDE/editor settings
+/.fleet/
+/.idea/
+/.nova/
+/.vscode/
+/.zed/
+.phpactor.json
+
+# Local AI assistant/tooling state
+/.agents/
+/.claude/
+.mcp.json
+opencode.json
+skills-lock.json
+AGENTS.md
+CLAUDE.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Legacy local VM config
+Homestead.json
+Homestead.yaml
