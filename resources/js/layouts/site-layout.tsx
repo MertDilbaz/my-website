@@ -6,19 +6,19 @@ import { Navbar } from '@/components/sections/navbar';
 import { AmbientBackground } from '@/components/ui/ambient-background';
 
 const description =
-    'Mert Dilbaz — full-stack developer building things that ship. Laravel, React, and everything in between.';
+    'Mert Dilbaz — Software Engineer focused on backend development, AI-integrated applications, and practical software systems with Java and Go.';
 
 export function SiteLayout({ children }: { children: ReactNode }) {
     return (
         <>
             <Head>
-                <title>Mert Dilbaz — Full-Stack Developer</title>
+                <title>Mert Dilbaz — Software Engineer</title>
                 <meta name="description" content={description} />
                 <meta name="author" content="Mert Dilbaz" />
                 <meta property="og:type" content="website" />
                 <meta
                     property="og:title"
-                    content="Mert Dilbaz — Full-Stack Developer"
+                    content="Mert Dilbaz — Software Engineer"
                 />
                 <meta property="og:description" content={description} />
                 <meta name="theme-color" content="#0a0d0c" />

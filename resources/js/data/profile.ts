@@ -28,14 +28,17 @@ export const socials: Social[] = [
 
 export const profile = {
     name: 'Mert Dilbaz',
-    role: 'Full-Stack Developer',
+    role: 'Software Engineer',
     tagline:
-        'Backend-focused full-stack developer building reliable web apps — from Spring Boot APIs to React interfaces.',
+        'Computer Engineer focused on backend development, AI-integrated applications, and software architecture. Building practical systems with Java, Go, and modern web technologies.',
     location: 'Manisa, Türkiye',
-    availability: 'Open to junior & full-stack roles',
+    focus: 'Backend & AI Systems',
+    stack: 'Java · Go · Spring Boot',
+    availability: 'Open to junior software engineering, backend & full-stack roles',
     bio: [
-        "I'm a recent Computer Engineering graduate and full-stack developer with a focus on the backend. I'm most at home building REST APIs and services with Java and Spring Boot, and I pair them with React interfaces when a project needs one.",
-        'I graduated from Sivas Cumhuriyet University with a 3.09/4 GPA, then worked as a Java developer at EYOSoft contributing to several projects. I care about clean, maintainable code, sensible architecture, and shipping things that actually work.',
+        'I am a Computer Engineering graduate from Sivas Cumhuriyet University (October 2026, GPA 3.09/4.00). My focus is backend development, practical software architecture, and integrating AI capabilities into applications.',
+        'I work on Mevzun, a local-first legal desktop workspace with document and AI workflows, and Banking AI Harness, a Java-based proof of concept exploring controlled banking operations through LLM tool calling and MCP.',
+        'During my studies, I joined EYOSoft as a software engineering intern. I also completed the Samsung Innovation Campus Artificial Intelligence course in October 2026. I care about maintainable services, clear boundaries, and testing systems against real use cases.',
     ],
     email: 'mertdilbaz202@gmail.com',
     resumeUrl: '/MertDilbazCV.pdf',

@@ -25,7 +25,7 @@ export function Experience() {
                         Experience
                     </h2>
                     <p className="mt-2 text-sm text-muted">
-                        Roles, school, and side projects.
+                        Professional experience, education, and certification.
                     </p>
                 </Reveal>
 
@@ -68,6 +68,16 @@ export function Experience() {
                                         <p className="mt-1 max-w-2xl leading-relaxed text-muted">
                                             {entry.description}
                                         </p>
+                                        {entry.link && (
+                                            <a
+                                                href={entry.link.href}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="mt-3 inline-flex text-sm font-medium text-ink underline decoration-line underline-offset-4 transition-colors hover:text-accent-soft"
+                                            >
+                                                {entry.link.label}
+                                            </a>
+                                        )}
                                         {entry.tags && (
                                             <div className="mt-3 flex flex-wrap gap-2">
                                                 {entry.tags.map((tag) => (

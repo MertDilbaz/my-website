@@ -15,9 +15,10 @@ export function Contact() {
                             Let&apos;s build something.
                         </h2>
                         <p className="mt-4 max-w-lg leading-relaxed text-muted">
-                            I&apos;m open to junior &amp; full-stack roles and
-                            the occasional freelance project. If anything here
-                            resonates, my inbox is open.
+                            I&apos;m open to junior software engineering, backend,
+                            and full-stack opportunities. I&apos;m also interested
+                            in practical AI-integrated applications and
+                            collaborative software projects.
                         </p>
 
                         <div className="mt-8 flex flex-col gap-1">

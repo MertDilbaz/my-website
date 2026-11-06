@@ -4,7 +4,6 @@ import { Experience } from '@/components/sections/experience';
 import { Hero } from '@/components/sections/hero';
 import { Skills } from '@/components/sections/skills';
 import { Work } from '@/components/sections/work';
-import { Writing } from '@/components/sections/writing';
 import { SiteLayout } from '@/layouts/site-layout';
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
             <About />
             <Skills />
             <Work />
-            <Writing />
             <Experience />
             <Contact />
         </SiteLayout>

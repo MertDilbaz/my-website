@@ -36,6 +36,7 @@ export function Navbar() {
                     <a
                         href={profile.resumeUrl}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="hidden rounded-full bg-ink px-3.5 py-1.5 text-xs font-medium text-base transition-colors hover:bg-white sm:inline-flex"
                     >
                         Resume
@@ -72,6 +73,7 @@ export function Navbar() {
                         <a
                             href={profile.resumeUrl}
                             target="_blank"
+                            rel="noopener noreferrer"
                             onClick={() => setOpen(false)}
                             className="mt-1 rounded-lg bg-ink px-3 py-2.5 text-sm font-medium text-base"
                         >

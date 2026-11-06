@@ -7,25 +7,39 @@ export type TimelineEntry = {
     org: string;
     description: string;
     tags?: string[];
+    link?: { label: string; href: string };
 };
 
 export const experience: TimelineEntry[] = [
     {
-        type: 'feat',
-        date: '5 months',
-        title: 'Software Developer',
-        org: 'EYOSoft',
-        description:
-            'Joined as a Java developer and contributed to several projects — building backend services and full-stack features with Java, Spring Boot, and React.',
-        tags: ['Java', 'Spring Boot', 'React'],
-    },
-    {
         type: 'release',
-        date: 'Graduated',
+        date: 'October 2026',
         title: 'B.Sc. Computer Engineering',
         org: 'Sivas Cumhuriyet University',
         description:
-            'Graduated with a cumulative GPA of 3.09/4. Coursework covered software engineering, algorithms, databases, and web systems.',
-        tags: ['Algorithms', 'Databases', 'Software Eng.'],
+            'Graduated in October 2026 with a cumulative GPA of 3.09/4.00.',
+        tags: ['Computer Engineering', 'GPA 3.09 / 4.00'],
+    },
+    {
+        type: 'release',
+        date: 'July – October 2026',
+        title: 'Artificial Intelligence Course',
+        org: 'Samsung Innovation Campus',
+        description:
+            'Successfully completed the Artificial Intelligence course, held from July 1 to October 7, 2026. Certificate issued October 7, 2026.',
+        tags: ['Artificial Intelligence', 'Certificate of Completion'],
+        link: {
+            label: 'View certificate (PDF)',
+            href: '/certificates/Samsung_Innovation_Campus_AI_Mert_Dilbaz.pdf',
+        },
+    },
+    {
+        type: 'feat',
+        date: 'February – August 2026',
+        title: 'Software Engineering Intern',
+        org: 'EYOSoft',
+        description:
+            'Contributed to REST API and microservice design discussions in a Java environment; participated in Agile stand-ups and collaborative code reviews.',
+        tags: ['Java', 'REST APIs', 'Agile'],
     },
 ];

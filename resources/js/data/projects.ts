@@ -17,91 +17,69 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        slug: 'manul-sentinel',
-        title: 'Manul Sentinel',
-        year: '2026',
-        tagline: 'Personal job radar',
+        slug: 'mevzun',
+        title: 'Mevzun',
+        year: '2026 · In development',
+        tagline: 'Legal workspace & AI assistant',
         summary:
-            'A Python assistant that scans job sources, scores postings against a target software/IT profile, dedupes them in SQLite, and sends clean Telegram digests on a schedule.',
-        role: 'Solo',
-        stack: ['Python', 'SQLite', 'Telegram API', 'GitHub Actions', 'YAML'],
+            'A local-first desktop workspace bringing legal case files, documents, notes, and AI-assisted workflows into one application. Designed around explicit, user-controlled UYAP case operations.',
+        role: 'Independent project',
+        stack: ['Go', 'Wails', 'Svelte', 'SQLite / SQLCipher', 'MCP', 'LLM Tool Calling'],
         problem:
-            "Checking dozens of job boards every day is exhausting, and most postings aren't even a fit for an early-career candidate.",
+            'Legal professionals often move between case portals, document tools, and separate notes. That fragmentation makes it harder to keep context while working on a case.',
         approach: [
-            'Built a modular source layer that normalizes postings from many boards and ATS platforms (HRPeak, Workable, Greenhouse, Lever, and more) into a common Job model.',
-            'Wrote a rule-based scorer that ranks each posting on software/IT relevance, seniority, location, and target-role fit, then hard-filters the rest.',
-            'Used SQLite for duplicate detection so the same posting is never sent twice, and packed results into paginated Telegram digest cards.',
-            'Scheduled unattended weekday runs on GitHub Actions with YAML-based config for sources and scoring.',
+            'Built a desktop-oriented, local-first application using Go, Wails, and Svelte, with encrypted local data storage.',
+            'Designed case and document workflows around actions initiated by the user, rather than unattended bulk collection.',
+            'Developed MCP tools for scoped access to cases, documents, and document chunks, with execution and retrieval limits.',
+            'Used field testing and diagnostic packages to investigate UYAP session and document-handling integration issues.',
         ],
         outcome:
-            'A quiet, self-running job radar that surfaces only relevant, non-duplicate roles straight to Telegram.',
-        links: [
-            {
-                label: 'Code',
-                href: 'https://github.com/MertDilbaz/manul-radar',
-            },
-        ],
+            'An actively developed legal workspace with AI-assisted document workflows. UYAP integration and compatibility work remain in progress; it is not an official UYAP product.',
+        links: [],
         featured: true,
     },
     {
-        slug: 'pixel-asset-generator',
-        title: 'Pixel Asset Generator',
-        year: '2026',
-        tagline: 'AI pixel-art asset pipeline',
+        slug: 'banking-ai-harness',
+        title: 'Banking AI Harness',
+        year: '2026 · Proof of concept',
+        tagline: 'Agentic banking assistant architecture',
         summary:
-            'A FastAPI service that turns text prompts into pixel-art game assets — generating images with Google Vertex AI, then running a pixel pipeline to produce clean, categorized 32×32 sprites.',
-        role: 'Solo',
-        stack: ['Python', 'FastAPI', 'Vertex AI', 'Pillow', 'Pydantic'],
+            'A Java-based proof of concept that translates natural-language banking requests into validated, approval-aware workflows using LLM tool calling, MCP, and mock banking services.',
+        role: 'Independent proof of concept',
+        stack: ['Java', 'MCP', 'LLM Tool Calling', 'Schema Validation', 'Mock Banking APIs'],
         problem:
-            'Hand-drawing consistent pixel-art sprites is slow, and game-jam teams often need many small assets fast.',
+            'Natural-language banking assistants must do more than generate responses: they need to understand account context, validate instructions, and keep sensitive actions under explicit user control.',
         approach: [
-            'Exposed batch endpoints through FastAPI with typed Pydantic request models.',
-            'Generated raw images from prompts using Google Vertex AI (Gemini / Imagen).',
-            'Ran a dedicated pixel pipeline that downscales each raw image into a crisp 32×32 pixel-art sprite.',
-            'Saved categorized raw and pixel outputs per asset so results are easy to browse and drop into a project.',
+            'Designed a single orchestrator that combines native LLM tool calling with MCP tools for banking operations.',
+            'Used schema validation and controlled execution steps to turn requests into checkable, approval-aware instructions.',
+            'Implemented mock banking services for operations such as scheduled transfers, price-triggered gold sales, and transaction inquiries.',
+            'Tested workflows through automated checks and live-model demo scenarios, including validation and rejection cases.',
         ],
         outcome:
-            'A self-service API that produces categorized pixel-art assets in batches, straight from prompts.',
-        links: [
-            {
-                label: 'Code',
-                href: 'https://github.com/MertDilbaz/asset-generator-tool',
-            },
-        ],
+            'A working architecture proof of concept with validated demo flows. It operates on mock services rather than real bank accounts, and some scenarios remain experimental.',
+        links: [],
         featured: true,
     },
     {
-        slug: 'getajob',
-        title: 'GetAJob',
-        year: '2026',
-        tagline: 'Full-stack job portal',
+        slug: 'my-smart-garden',
+        title: 'My Smart Garden',
+        year: '2026 · Prototype',
+        tagline: 'IoT monitoring system',
         summary:
-            'A full-stack job portal where candidates register, browse listings, and apply, while a Spring Boot backend handles auth, applications, and notifications end to end.',
-        role: 'Full-stack · solo',
-        stack: [
-            'Java',
-            'Spring Boot',
-            'Spring Security',
-            'JWT',
-            'Spring Data JPA',
-            'React',
-        ],
+            'An IoT project for monitoring soil conditions through ESP32 sensor nodes, a wireless gateway, backend services, and application interfaces.',
+        role: 'Independent project',
+        stack: ['ESP32', 'ESP-NOW', 'Go', 'PostgreSQL', 'Flutter'],
         problem:
-            'I wanted one project to practice building a real, secured platform across the whole stack.',
+            'Monitoring several growing areas manually is time-consuming. A small wireless sensor network can make soil data available remotely and support informed watering decisions.',
         approach: [
-            'Structured a layered Spring Boot backend — controllers, DTOs, entities, and config — covering companies, job listings, applications, careers, and notifications.',
-            'Secured the API with Spring Security and stateless JWT authentication (jjwt).',
-            'Modeled the hiring flow with Spring Data JPA, including profile and resume image uploads.',
-            'Added email notifications through Spring Mail and built a React frontend that consumes the API.',
+            'Defined a pilot architecture with one gateway and three soil-moisture sensor nodes.',
+            'Designed ESP-NOW communication between sensor nodes and the gateway, with Wi-Fi connectivity for upstream data.',
+            'Planned Go backend services with PostgreSQL storage and mobile access through Flutter.',
+            'Considered BLE provisioning to simplify network setup for the devices.',
         ],
         outcome:
-            'A complete, secured job portal covering the full flow from registration and login to applying for a role.',
-        links: [
-            {
-                label: 'Code',
-                href: 'https://github.com/MertDilbaz/GetAJob-Fullstack-JobPortal',
-            },
-        ],
+            'A prototype/pilot architecture under development; the full sensor network is not presented as a deployed product.',
+        links: [],
         featured: true,
     },
 ];

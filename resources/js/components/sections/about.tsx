@@ -5,7 +5,7 @@ import { stats } from '@/data/skills';
 
 const facts = [
     { key: 'location', value: profile.location },
-    { key: 'focus', value: 'Web & Backend' },
+    { key: 'focus', value: profile.focus },
     { key: 'status', value: profile.availability },
 ];
 
@@ -20,8 +20,8 @@ export function About() {
                 <div className="mt-8 grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
                     <Reveal>
                         <h2 className="text-3xl leading-tight font-semibold tracking-tight text-balance text-ink sm:text-4xl">
-                            A developer who ships —{' '}
-                            <span className="text-muted">and ships often.</span>
+                            Building software{' '}
+                            <span className="text-muted">that solves real problems.</span>
                         </h2>
                     </Reveal>
 

@@ -9,8 +9,8 @@ import { profile } from '@/data/profile';
 
 const meta = [
     { label: 'based in', value: profile.location },
-    { label: 'focus', value: 'Web & Backend' },
-    { label: 'stack', value: 'Java · Spring Boot · React' },
+    { label: 'focus', value: profile.focus },
+    { label: 'stack', value: profile.stack },
 ];
 
 export function Hero() {

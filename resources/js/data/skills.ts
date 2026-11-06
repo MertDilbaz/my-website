@@ -8,34 +8,43 @@ export const skillGroups: SkillGroup[] = [
     {
         label: 'Languages',
         icon: 'code',
-        items: ['Java', 'Python', 'JavaScript', 'TypeScript', 'SQL'],
+        items: ['Java', 'Go', 'Python', 'JavaScript', 'TypeScript', 'SQL'],
     },
     {
-        label: 'Backend',
+        label: 'Backend & Data',
         icon: 'server',
         items: [
             'Spring Boot',
             'REST APIs',
             'Spring Security',
             'JPA / Hibernate',
+            'PostgreSQL',
             'MySQL',
-            'H2',
+            'SQLite',
         ],
     },
     {
-        label: 'Frontend',
+        label: 'Frontend & Desktop',
         icon: 'layout',
-        items: ['React', 'JavaScript', 'TailwindCSS', 'HTML', 'CSS'],
+        items: ['React', 'Svelte', 'Wails', 'Tailwind CSS', 'HTML', 'CSS'],
     },
     {
-        label: 'Tools & DevOps',
+        label: 'AI & Developer Tools',
         icon: 'wrench',
-        items: ['Git', 'GitHub', 'Postman', 'Linux'],
+        items: [
+            'LLM Tool Calling',
+            'MCP',
+            'Workflow Validation',
+            'Git',
+            'GitHub',
+            'Linux',
+            'Postman',
+        ],
     },
 ];
 
 export const stats: { label: string; value: string }[] = [
     { label: 'cumulative gpa', value: '3.09' },
-    { label: 'projects shipped', value: '3' },
-    { label: 'industry experience', value: '5 mo' },
+    { label: 'featured projects', value: '3' },
+    { label: 'AI course certificate', value: '1' },
 ];
